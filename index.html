@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Homepage </title>
+        <link rel="stylesheet" href="http://localhost:3000/style.css">
+    </head>
+    <body>
+        <section class="sidebar">
+            <button class="tablinks">FAVORITE FOOD</button>
+            <button class="tablinks">FAVORITE SONGS</button>
+            <button class="tablinks">FAVORITE QUOTES</button>
+        </section>
+        <section class="container">  
+            <div class="form">
+                <form>
+                    <br>
+                    <label>ADD FOOD</label><br><br>
+                    <label for="foodname">Food name: </label><br>
+                    <input type="text" id="foodname" name="foodname"><br><br>
+                    <label for="description">Description: </label><br>
+                    <input type="text" id="description" name="description"><br><br>
+                    <label for="imgurl">Image URL: </label><br>
+                    <input type="text" id="imgurl" name="imgurl"><br><br>
+                    <label for="rank">Rank: </label><br>
+                    <input type="text" id="rank" name="rank"><br><br>
+                </form>
+                <button id="submit-button" onClick="submitFood()">ADD</button> 
+            </div>
+            <div class="food"> <!---This will be use to contain the cards-->
+
+            </div>
+            
+                            
+        </section>
+        <section class="ads">
+            <h2> ADS </h2>
+            <div class="card">
+                <a href="https://www.tumblr.com/sulatgino">
+                    <img src="images/tumblr.jpg" alt="Avatar" style="width:100%">
+                </a>
+            </div>
+            <div class="card">
+                <img src="images/chess.png" alt="Avatar" style="width:100%">
+            </div>
+            <div class="card">
+                <img src="images/shopee.png" alt="Avatar" style="width:100%">
+            </div>
+        </section>
+        <script src="http://localhost:3000/form.js"></script>
+    </body>
+</html>
